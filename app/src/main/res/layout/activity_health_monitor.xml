@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthMonitorActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_bullet"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:text="Select According to your Health Condition:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/questionfever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1. Fever?"
+            android:textColor="@color/main"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <!--top layout ends-->
+
+
+    <!--most common symptoms:-->
+
+    <RelativeLayout
+        android:id="@+id/commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout">
+
+
+        <RelativeLayout
+            android:id="@+id/feverlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/questionfever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1. Fever?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answerfever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionfever"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/feveryes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionfever"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answerfever"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textfeveryes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feverno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionfever"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/feveryes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textfeverno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/feverlayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/drycoughlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/divider1">
+
+            <TextView
+                android:id="@+id/questiondrycough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="2. Runny Nose?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answerdrycough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questiondrycough"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/drycoughyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questiondrycough"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answerdrycough"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textdrycoughyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/drycoughno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questiondrycough"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/drycoughyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textdrycoughno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/drycoughlayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/tirednesslayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/divider2">
+
+            <TextView
+                android:id="@+id/questiontiredness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="3. Muscle Soreness?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answertiredness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questiontiredness"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/tirednessyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questiontiredness"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answertiredness"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/texttirednessyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tirednessno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questiontiredness"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tirednessyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/texttirednessno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tirednesslayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!--Most common symptoms ends-->
+
+
+    <!--serious symptoms:-->
+
+
+    <RelativeLayout
+        android:id="@+id/seriouslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commonlayout">
+
+
+        <RelativeLayout
+            android:id="@+id/breathinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-1dp">
+
+            <TextView
+                android:id="@+id/questionbreathing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="4. Diarrhea?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answerbreathing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionbreathing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/breathingyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionbreathing"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answerbreathing"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textbreathingyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/breathingno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionbreathing"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/breathingyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textbreathingno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/breathinglayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/chestpainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/divider4">
+
+            <TextView
+                android:id="@+id/questionchestpain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="5. Lung Infection?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answerchestpain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionchestpain"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/chestpainyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionchestpain"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answerchestpain"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textchestpainyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chestpainno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionchestpain"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/chestpainyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textchestpainno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/chestpainlayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/movementlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/divider5">
+
+            <TextView
+                android:id="@+id/questionmovement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="6. Have you travel recently?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answermovement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionmovement"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/movementyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionmovement"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answermovement"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textmovementyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/movementno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionmovement"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/movementyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textmovementno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/movementlayout"
+            android:layout_marginLeft="50dp"
+            android:background="@color/main2">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/isolation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/divider6">
+
+            <TextView
+                android:id="@+id/questionisolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="7. Have you been to isolation?"
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/answerisolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionisolation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Answer: "
+                android:textColor="@color/main"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/isolationyes"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionisolation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/answerisolation"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textisolationyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/isolationno"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionisolation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/isolationyes"
+                android:background="@drawable/not_focus">
+
+
+                <TextView
+                    android:id="@+id/textisolationno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <!--Serious symptoms ends-->
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seriouslayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_bg"
+        android:text="Check Condition"
+        android:textColor="@color/white"
+        android:id="@+id/checkcondition">
+
+    </android.widget.Button>
+
+</RelativeLayout>
