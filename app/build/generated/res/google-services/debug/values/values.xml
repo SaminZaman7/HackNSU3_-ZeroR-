@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">29018077286-hhvibjoc86ekep7t937bam9l3d1ci1to.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">29018077286</string>
+    <string name="google_api_key" translatable="false">AIzaSyBb9DSzeQyKmvfkpl9ztcRzXjnqss8EKmE</string>
+    <string name="google_app_id" translatable="false">1:29018077286:android:69f82f2ef1aa999d9d55a7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBb9DSzeQyKmvfkpl9ztcRzXjnqss8EKmE</string>
+    <string name="google_storage_bucket" translatable="false">hudai-419cb.appspot.com</string>
+    <string name="project_id" translatable="false">hudai-419cb</string>
+</resources>
