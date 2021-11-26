@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/HackNSU/app/src/main/res/layout/activity_login.xml" value="0.24864130434782608" />
+        <entry key="..\:/HackNSU/app/src/main/res/drawable/button_bg.xml" value="1.45" />
+        <entry key="..\:/HackNSU/app/src/main/res/drawable/input_bg.xml" value="0.290625" />
+        <entry key="..\:/HackNSU/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/HackNSU/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
         <entry key="..\:/HackNSU/app/src/main/res/layout/activity_map.xml" value="0.24864130434782608" />
+        <entry key="..\:/HackNSU/app/src/main/res/layout/activity_register.xml" value="0.26811594202898553" />
+        <entry key="..\:/HackNSU/app/src/main/res/layout/nav_header.xml" value="0.26811594202898553" />
+        <entry key="..\:/HackNSU/app/src/main/res/menu/menu.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>
