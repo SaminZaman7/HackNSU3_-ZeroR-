@@ -22,7 +22,7 @@
             android:drawableLeft="@drawable/ic_bullet"
             android:drawablePadding="10dp"
             android:drawableTint="@color/white"
-            android:text="Select According to your Health Condition:"
+            android:text=" Select According to your Health Condition:"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold">

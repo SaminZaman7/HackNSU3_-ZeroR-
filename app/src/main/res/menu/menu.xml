@@ -3,15 +3,44 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:id="@+id/mapactivity"
-            android:title="Hospital Location"
-            android:icon="@drawable/ic_baseline_location_on_24">
+        <item android:id="@+id/tracker"
+            android:title="Covid-19 Tracker"
+            android:icon="@drawable/ic_virus">
+        </item>
+        <item android:id="@+id/bmicalculator"
+            android:title="BMI Calculator"
+            android:icon="@drawable/ic_bmi">
+        </item>
+        <item android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person">
+        </item>
 
+        <item android:id="@+id/bloodgroupmenu"
+            android:title="Search for Blood"
+            android:icon="@drawable/ic_blood">
+        </item>
+        <item android:id="@+id/healthmonitor"
+            android:title="Health Status"
+            android:icon="@drawable/ic_health">
+        </item>
+        <item android:id="@+id/hospitallocation"
+            android:title="Find Hospital"
+            android:icon="@drawable/ic_baseline_location_on_24">
+        </item>
+        <item android:id="@+id/appoinment"
+            android:title="Doctor's Appointment"
+            android:icon="@drawable/ic_doctor">
+        </item>
+
+        <item android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/ic_logout">
         </item>
 
     </group>
 
-    <item android:title="communication">
+    <!--<item android:title="communication">
 
         <menu>
             <item android:id="team"
@@ -21,6 +50,6 @@
             </item>
         </menu>
 
-    </item>
+    </item>-->
 
 </menu>

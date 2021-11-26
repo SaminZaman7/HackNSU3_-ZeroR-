@@ -4,7 +4,7 @@
             "outputFile": "C:\\HackNSU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\107b48ead489d4dd0a48badb09d9592d\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\1cefa4eb9351779445594e1ed8ea1f4f\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\53888a2b42fbf455d43b174cf8acfb79\\transformed\\appcompat-1.4.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\26560700f24ed24de7159758fff184e0\\transformed\\appcompat-1.4.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

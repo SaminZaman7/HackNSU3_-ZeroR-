@@ -63,8 +63,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        createRequest();
-        mGoogle = findViewById(R.id.btn_google);
+        //createRequest();
+        //mGoogle = findViewById(R.id.btn_google);
 
 
         mEmail = findViewById(R.id.email);
@@ -133,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void createRequest() {
+   /* private void createRequest() {
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -144,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-    }
+    }*/
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -215,7 +215,6 @@ public class LoginActivity extends AppCompatActivity {
         }
         Intent ih = new Intent(LoginActivity.this,MainActivity.class);
         startActivity(ih);
-
 
     }
 }

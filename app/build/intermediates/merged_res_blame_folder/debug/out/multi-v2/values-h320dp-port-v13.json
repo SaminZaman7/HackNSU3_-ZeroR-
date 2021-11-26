@@ -4,7 +4,7 @@
             "outputFile": "C:\\HackNSU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\e44905d88435b8a284dfc0fee1bf9165\\transformed\\material-1.4.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,7 +4,7 @@
             "outputFile": "C:\\HackNSU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\107b48ead489d4dd0a48badb09d9592d\\transformed\\core-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\1cefa4eb9351779445594e1ed8ea1f4f\\transformed\\core-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\53888a2b42fbf455d43b174cf8acfb79\\transformed\\appcompat-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\26560700f24ed24de7159758fff184e0\\transformed\\appcompat-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

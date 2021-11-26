@@ -4,7 +4,24 @@
             "outputFile": "C:\\HackNSU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\53888a2b42fbf455d43b174cf8acfb79\\transformed\\appcompat-1.4.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\cabc7bf9fcd04c9bc88fe0c2ed8f8af4\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "347,413,474,540",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "408,469,535,602"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\fahim\\.gradle\\caches\\transforms-3\\26560700f24ed24de7159758fff184e0\\transformed\\appcompat-1.4.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
